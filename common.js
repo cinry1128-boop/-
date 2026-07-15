@@ -74,6 +74,7 @@ async function loadSidebar() {
                 if (item.page_id === 'town_info') link = 'town_info.html';
                 if (item.page_id === 'town_field') link = 'town_field.html';
                 if (item.page_id === 'mob_info') link = 'mob_info.html';
+                if (item.page_id === 'koutounowa') link = 'koutounowa.html';
                 html += `<li><a href="${link}">${item.display_name}</a></li>`;
             });
             html += `</ul>`;
