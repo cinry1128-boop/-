@@ -1,0 +1,93 @@
+<div id="pw-area" style="max-width: 600px; margin: 40px auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-family: sans-serif;">
+    <h3 style="color: #333; margin-bottom: 15px;">🔒 ギルド専用ページ</h3>
+    <p style="font-size: 14px; color: #666; margin-bottom: 20px;">ゲーム内ギルドボードに記載されているパスワードを入力してください。</p>
+    <input type="password" id="pw-input" placeholder="パスワードを入力" style="padding: 10px; width: 60%; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; margin-bottom: 15px;"><br>
+    <button onclick="checkPassword()" style="padding: 10px 20px; background-color: #333; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">送信</button>
+    <p id="pw-error" style="color: #d9534f; font-size: 14px; margin-top: 10px; display: none;">パスワードが違います。</p>
+</div>
+
+<div id="guild-page" style="display: none; max-width: 800px; margin: 20px auto; padding: 30px; background-color: #ffffff; color: #333333; font-family: sans-serif; line-height: 1.8; border: 1px solid #e0e0e0; border-radius: 8px;">
+
+    <h2 style="color: #5865F2; border-bottom: 2px solid #5865F2; padding-bottom: 10px; margin-top: 0;">🤝 煌灯ノ輪 ギルド規約</h2>
+    
+    <p>ギルド「煌灯ノ輪」へようこそ！<br>
+    みんなで楽しくゲームを遊ぶためのルールをここにまとめていきます。<br>
+    分からないことがあれば、気軽にマスターや幹部まで声をかけてくださいね。よろしくお願いします！</p>
+
+    <div style="background-color: #f4f6f9; padding: 20px; border-radius: 8px; margin: 25px 0;">
+        <h3 style="margin-top: 0; color: #1a1a1a;">🌌 ギルド名「煌灯ノ輪」に込めた想い</h3>
+        <p>私たちのギルド名にある<strong>「煌灯（こうとう）」</strong>は、メンバー一人ひとりが持つ個性の輝きや、ゲームを心から楽しむ温かい灯火（ともしび）を表しています。</p>
+        <p>ゲームを始めたばかりのときや、壁にぶつかったとき、「今は誰かが照らしている灯」に救われることがきっとあります。その温かさを受け取りながら、いつかは自分も成長して、別の「誰かの明かりになれるように」。</p>
+        <p>そんな風に、お互いを照らし合える関係を目指しています。</p>
+        <p>ですが、強い光を放ち続けることは、一人じゃ無理だからみんなで。誰か一人が無理をするのではなく、みんなの小さな灯火が集まることで、互いを支え合う固い<strong>「輪（わ）」</strong>になります。</p>
+        <p>全員の灯火が集まって初めて「煌灯ノ輪」という大きな光になります。みんなで居心地の良い、温かい輪を作っていきましょう！</p>
+    </div>
+
+    <h3 style="color: #2c3e50; border-left: 5px solid #2c3e50; padding-left: 10px; margin-top: 30px;">🛡️ 第1条：基本マナー（灯火を大切に）</h3>
+    <p><strong>● お互いへのリスペクト</strong><br>
+    言動やプレイスタイルの違いを尊重し、暴言、煽り、誹謗中傷、他人が不快に感じるいじりなどは禁止します。</p>
+    <p><strong>● 挨拶について</strong><br>
+    イン・アウト時の挨拶は強制しませんが、挨拶があるとみんなの灯火がより温かくなります。できる範囲で気軽に声を掛け合いましょう。</p>
+    <p><strong>● ネタバレへの配慮</strong><br>
+    ストーリーの核心に触れる内容や、未クリアのメンバーがいるコンテンツの攻略情報は、専用のチャンネル（「#攻略・質問」など）を活用し、未読の方への配慮をお願いします。（アーカイブサイトにはすべてが載っている可能性があります）</p>
+
+    <h3 style="color: #2c3e50; border-left: 5px solid #2c3e50; padding-left: 10px; margin-top: 30px;">🤝 第2条：Discord・ギルド活動（輪を広げる）</h3>
+    <p><strong>● パーティ募集・イベント参加</strong><br>
+    「# パーティ募集」での声掛けには、気軽に参加スタンプや返信をしてください。初心者・上級者に関わらず、みんなで輪になって楽しみましょう。</p>
+    <p><strong>● プライベートの優先</strong><br>
+    リアル（現実生活）が最優先です。忙しい時や体調が優れない時は、ゲームやDiscordを遠慮なくお休みしてください。</p>
+
+    <h3 style="color: #2c3e50; border-left: 5px solid #d9534f; padding-left: 10px; margin-top: 30px;">🚫 第3条：禁止事項（光を絶やさないために）</h3>
+    <p>以下の行為が確認された場合、マスター・幹部より確認のご連絡、または脱退処置をとらせていただく場合があります。</p>
+    <ul>
+        <li>一般的なモラルやゲームの利用規約（規約違反行為、RMTなど）に反する行為。</li>
+        <li>ギルドメンバーに対する過度な不満のぶつけ合いや、出会い目的の引き抜き・つきまとい行為。</li>
+        <li>連絡なしでの長期未ログイン（事情がある場合は事前にマスターまでご一報ください）。</li>
+    </ul>
+
+    <h3 style="color: #2c3e50; border-left: 5px solid #2c3e50; padding-left: 10px; margin-top: 30px;">📢 最後に</h3>
+    <p>困ったことや、メンバー間でトラブルになりそうなことがあれば、一人で抱え込まずにいつでもギルドマスターや幹部へDM（ダイレクトメッセージ）で相談してください。</p>
+    <p>みんなの「煌灯」がずっと輝き続けられるよう、ご協力よろしくお願いします！</p>
+
+    <!-- チェックボックスと招待リンク表示エリア -->
+    <div style="margin-top: 40px; padding: 25px; border: 2px dashed #5865F2; border-radius: 8px; background-color: #f2f3ff; text-align: center;">
+        <p style="font-weight: bold; font-size: 16px; margin-bottom: 15px;">
+            <label style="cursor: pointer;">
+                <input type="checkbox" id="agree-check" onchange="toggleInviteBtn()" style="transform: scale(1.3); margin-right: 10px; vertical-align: middle;">
+                規約を確認し、内容に同意します。
+            </label>
+        </p>
+        
+        <div id="invite-btn-area" style="display: none; margin-top: 20px;">
+            <p style="color: #5865F2; font-weight: bold; margin-bottom: 15px;">✨ ご同意ありがとうございます！下のボタンからDiscordへお進みください。</p>
+            <a href="https://discord.gg/ADnrnwuSue" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 14px 28px; background-color: #5865F2; color: #ffffff; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.15);">
+                Discordサーバーに参加する
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function checkPassword() {
+    const input = document.getElementById('pw-input').value;
+    const correctPassword = '2563'; // 【変更箇所】ゲーム内のボードに書くパスワードを設定してください
+    
+    if (input === correctPassword) {
+        document.getElementById('pw-area').style.display = 'none';
+        document.getElementById('guild-page').style.display = 'block';
+    } else {
+        document.getElementById('pw-error').style.display = 'block';
+    }
+}
+
+function toggleInviteBtn() {
+    const isChecked = document.getElementById('agree-check').checked;
+    const btnArea = document.getElementById('invite-btn-area');
+    if (isChecked) {
+        btnArea.style.display = 'block';
+    } else {
+        btnArea.style.display = 'none';
+    }
+}
+</script>
